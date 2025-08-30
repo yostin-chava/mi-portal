@@ -63,8 +63,35 @@
       text-align: center;
       font-size: 18px;
     }
-
-    /* Tarjetas */
+    /* ---------------------- */
+    /* Seccion de Habilidades */
+    /* ---------------------- */
+    #habilidades {
+      padding: 40px;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+    
+    #habilidades h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    
+    .badges-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .badges-container img {
+      height: 28px;
+    }
+    
+    /* -------------------- */
+    /* Seccion de Proyectos */
+    /* -------------------- */
     .cards {
       display: flex;
       justify-content: center;
@@ -88,7 +115,6 @@
       margin-bottom: 10px;
       color: #4a90e2;
     }
-    
     /* Boton de los proyectos */
     .card .btn {
       display: inline-flex;
@@ -108,20 +134,20 @@
     .card .btn i {
       font-size: 18px;
     }
-
+    
+    /* ------------------- */
     /* Sección de contacto */
+    /* ------------------- */
     #contacto {
       padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
       text-align: center;
     }
-    
     #contacto h2 {
       color: #357ABD;
       margin-bottom: 20px;
     }
-    
     /* Estilos unificados para todos los links en la sección contacto */
     #contacto a {
       color: #4a90e2;
@@ -134,12 +160,10 @@
       align-items: center;
       gap: 8px;
     }
-    
     #contacto a:hover {
       color: #2ecc71; /* color al pasar el mouse, puedes cambiarlo a otro matiz */
       text-decoration: underline;
     }
-    
     /* Contenedor de los items de contacto */
     #contacto .contact-items {
       display: flex;
@@ -148,13 +172,14 @@
       gap: 30px;
       margin-top: 20px;
     }
-    
     /* Iconos dentro de los links */
     #contacto i {
       font-size: 24px;
     }
 
+    /* ----------------- */
     /* Sección de footer */
+    /* ----------------- */
     footer {
     background: linear-gradient(90deg, #4a90e2, #357ABD);
     color: #fff;
@@ -177,6 +202,7 @@
     }
   </style>
 </head>
+  
 <body>
   <header>
     <h1>Bienvenido a mi Portal 🚀</h1>
@@ -193,6 +219,51 @@
   <section id="inicio">
     <h2>Inicio</h2>
     <p>Hola 👋, este es mi portal personal alojado en GitHub Pages.</p>
+  </section>
+
+  <!-- ----------- -->
+  <!-- Habilidades -->
+  <!-- ----------- -->
+  <section id="habilidades">
+  <h2>Habilidades</h2>
+  <div class="badges-container">
+    <!-- Pruebas -->
+    <img src="https://img.shields.io/badge/Pruebas_funcionales-✔️-brightgreen" alt="Pruebas funcionales">
+    <img src="https://img.shields.io/badge/Pruebas_regresión-✔️-brightgreen" alt="Pruebas de regresión">
+    <img src="https://img.shields.io/badge/Pruebas_exploratorias-✔️-brightgreen" alt="Pruebas exploratorias">
+    <img src="https://img.shields.io/badge/Caja_Negra-✔️-lightgrey" alt="Pruebas de caja negra">
+    <img src="https://img.shields.io/badge/Caja_Blanca-✔️-lightgrey" alt="Pruebas de caja blanca">
+    <img src="https://img.shields.io/badge/Casos_de_prueba-✔️-blue" alt="Casos de prueba">
+    <img src="https://img.shields.io/badge/Errores-Informe-red" alt="Informe de errores">
+
+    <!-- Automatización -->
+    <img src="https://img.shields.io/badge/Python-3.8%2B-blue" alt="Python">
+    <img src="https://img.shields.io/badge/Pytest-Framework-green" alt="Pytest">
+    <img src="https://img.shields.io/badge/Requests-Library-orange" alt="Requests">
+    <img src="https://img.shields.io/badge/Selenium-WebDriver-yellowgreen" alt="Selenium WebDriver">
+    <img src="https://img.shields.io/badge/POM-Page_Object_Model-lightblue" alt="Page Object Model">
+
+    <!-- Bases de datos -->
+    <img src="https://img.shields.io/badge/SQL-Relational-blue" alt="SQL">
+    <img src="https://img.shields.io/badge/PostgreSQL-DB-blueviolet" alt="PostgreSQL">
+
+    <!-- Herramientas -->
+    <img src="https://img.shields.io/badge/Git-Version_Control-orange" alt="Git">
+    <img src="https://img.shields.io/badge/GitHub-Code_hosting-black" alt="GitHub">
+    <img src="https://img.shields.io/badge/Jira-Project_Management-blue" alt="Jira">
+    <img src="https://img.shields.io/badge/Postman-API_Testing-orange" alt="Postman">
+    <img src="https://img.shields.io/badge/DevTools-Chrome-yellow" alt="DevTools">
+
+    <!-- SO -->
+    <img src="https://img.shields.io/badge/Linux-OS-black" alt="Linux">
+    <img src="https://img.shields.io/badge/Mac-OS-lightgrey" alt="Mac">
+    <img src="https://img.shields.io/badge/Windows-OS-blue" alt="Windows">
+
+    <!-- Otros -->
+    <img src="https://img.shields.io/badge/Android_Studio-IDE-green" alt="Android Studio">
+    <img src="https://img.shields.io/badge/LaTeX-Typesetting-blue" alt="LaTeX">
+    <img src="https://img.shields.io/badge/Overleaf-Editor-brightgreen" alt="Overleaf">
+  </div>
   </section>
 
   <!-- --------- -->
@@ -247,7 +318,7 @@
     </div>
     
   </div>
-</section>
+  </section>
   <!-- -------- -->
   <!-- Contacto -->
   <!-- -------- -->
@@ -267,11 +338,12 @@
       <i class="fas fa-file-download"></i> Descargar CV
     </a>
   </div>
-</section>
+  </section>
 
   <footer>
     <p>&copy; 2025 - Mi portal en GitHub Pages</p>
     <p><a href="#inicio">Volver arriba ↑</a></p>
   </footer>
+  
 </body>
 </html>
