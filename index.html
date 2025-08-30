@@ -16,6 +16,7 @@
       background: #f4f6f9;
       color: #333;
       line-height: 1.6;
+      padding-top: 80px; /* altura aproximada del header */
     }
     /* Encabezado */
     header {
@@ -24,6 +25,12 @@
       padding: 20px 0;
       text-align: center;
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+      position: fixed;  /* hace que el header se quede fijo */
+      top: 0;           /* se pega a la parte superior */
+      left: 0;
+      width: 100%;      /* ocupa todo el ancho */
+      z-index: 1000;    /* lo pone por encima del resto del contenido */
     }
     header h1 {
       margin-bottom: 10px;
