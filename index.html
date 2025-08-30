@@ -78,6 +78,21 @@
       margin-bottom: 10px;
       color: #4a90e2;
     }
+    
+    /* Boton de los proyectos */
+    .card .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 8px 15px;
+      background: #4a90e2;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .card .btn:hover {
+      background: #357ABD;
+    }
 
     /* Sección de contacto */
     #contacto {
@@ -152,17 +167,24 @@
     </nav>
   </header>
 
+  <!-- ------ -->
+  <!-- Inicio -->
+  <!-- ------ -->
   <section id="inicio">
     <h2>Inicio</h2>
     <p>Hola 👋, este es mi portal personal alojado en GitHub Pages.</p>
   </section>
 
+  <!-- --------- -->
+  <!-- Proyectos -->
+  <!-- --------- -->
   <section id="proyectos">
     <h2>Proyectos</h2>
     <div class="cards">
       <div class="card">
         <h3>Proyecto 1</h3>
         <p>Descripción breve de mi proyecto 1.</p>
+        <a class="btn" href="https://github.com/TUUSUARIO/proyecto1" target="_blank">Ver Repo</a>
       </div>
       <div class="card">
         <h3>Proyecto 2</h3>
@@ -174,8 +196,9 @@
       </div>
     </div>
   </section>
-
+  <!-- -------- -->
   <!-- Contacto -->
+  <!-- -------- -->
   <section id="contacto">
   <h2>Contacto</h2>
   <div class="contact-items">
