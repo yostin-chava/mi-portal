@@ -67,26 +67,36 @@
     /* Seccion de Habilidades */
     /* ---------------------- */
     #habilidades {
-      padding: 40px;
-      background-color: #f0f0f0;
+      padding: 50px 20px;
+      background-color: #f5f5f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-align: center;
     }
-    
     #habilidades h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
+      font-size: 2.5em;
+      margin-bottom: 30px;
       color: #333;
     }
-    
-    .badges-container {
+    .categoria {
+      margin-bottom: 40px;
+    }
+    .categoria h3 {
+      font-size: 1.5em;
+      color: #007acc;
+      margin-bottom: 15px;
+    }
+    .badges {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
     }
-    
-    .badges-container img {
+    .badges img {
       height: 28px;
+      transition: transform 0.2s;
+    }
+    .badges img:hover {
+      transform: scale(1.1);
     }
     
     /* -------------------- */
@@ -226,43 +236,70 @@
   <!-- ----------- -->
   <section id="habilidades">
   <h2>Habilidades</h2>
-  <div class="badges-container">
-    <!-- Pruebas -->
-    <img src="https://img.shields.io/badge/Pruebas_funcionales-✔️-brightgreen" alt="Pruebas funcionales">
-    <img src="https://img.shields.io/badge/Pruebas_regresión-✔️-brightgreen" alt="Pruebas de regresión">
-    <img src="https://img.shields.io/badge/Pruebas_exploratorias-✔️-brightgreen" alt="Pruebas exploratorias">
-    <img src="https://img.shields.io/badge/Caja_Negra-✔️-lightgrey" alt="Pruebas de caja negra">
-    <img src="https://img.shields.io/badge/Caja_Blanca-✔️-lightgrey" alt="Pruebas de caja blanca">
-    <img src="https://img.shields.io/badge/Casos_de_prueba-✔️-blue" alt="Casos de prueba">
-    <img src="https://img.shields.io/badge/Errores-Informe-red" alt="Informe de errores">
-
-    <!-- Automatización -->
-    <img src="https://img.shields.io/badge/Python-3.8%2B-blue" alt="Python">
-    <img src="https://img.shields.io/badge/Pytest-Framework-green" alt="Pytest">
-    <img src="https://img.shields.io/badge/Requests-Library-orange" alt="Requests">
-    <img src="https://img.shields.io/badge/Selenium-WebDriver-yellowgreen" alt="Selenium WebDriver">
-    <img src="https://img.shields.io/badge/POM-Page_Object_Model-lightblue" alt="Page Object Model">
-
-    <!-- Bases de datos -->
-    <img src="https://img.shields.io/badge/SQL-Relational-blue" alt="SQL">
-    <img src="https://img.shields.io/badge/PostgreSQL-DB-blueviolet" alt="PostgreSQL">
-
-    <!-- Herramientas -->
-    <img src="https://img.shields.io/badge/Git-Version_Control-orange" alt="Git">
-    <img src="https://img.shields.io/badge/GitHub-Code_hosting-black" alt="GitHub">
-    <img src="https://img.shields.io/badge/Jira-Project_Management-blue" alt="Jira">
-    <img src="https://img.shields.io/badge/Postman-API_Testing-orange" alt="Postman">
-    <img src="https://img.shields.io/badge/DevTools-Chrome-yellow" alt="DevTools">
-
-    <!-- SO -->
-    <img src="https://img.shields.io/badge/Linux-OS-black" alt="Linux">
-    <img src="https://img.shields.io/badge/Mac-OS-lightgrey" alt="Mac">
-    <img src="https://img.shields.io/badge/Windows-OS-blue" alt="Windows">
-
-    <!-- Otros -->
-    <img src="https://img.shields.io/badge/Android_Studio-IDE-green" alt="Android Studio">
-    <img src="https://img.shields.io/badge/LaTeX-Typesetting-blue" alt="LaTeX">
-    <img src="https://img.shields.io/badge/Overleaf-Editor-brightgreen" alt="Overleaf">
+  <!-- Categoría: Pruebas -->
+  <div class="categoria">
+    <h3>🧪 Pruebas</h3>
+    <div class="badges">
+      <img src="https://img.shields.io/badge/Pruebas_funcionales-✔️-brightgreen" alt="Pruebas funcionales">
+      <img src="https://img.shields.io/badge/Pruebas_regresión-✔️-brightgreen" alt="Pruebas de regresión">
+      <img src="https://img.shields.io/badge/Pruebas_exploratorias-✔️-brightgreen" alt="Pruebas exploratorias">
+      <img src="https://img.shields.io/badge/Caja_Negra-✔️-lightgrey" alt="Pruebas de caja negra">
+      <img src="https://img.shields.io/badge/Caja_Blanca-✔️-lightgrey" alt="Pruebas de caja blanca">
+      <img src="https://img.shields.io/badge/Listas_de_comprobación-✔️-lightgrey" alt="Listas de comprobación">
+      <img src="https://img.shields.io/badge/Casos_de_prueba-✔️-blue" alt="Casos de prueba">
+      <img src="https://img.shields.io/badge/Informe_de_errores-✔️-red" alt="Informe de errores">
+      <img src="https://img.shields.io/badge/Clases_de_equivalencia-✔️-lightgrey" alt="Clases de equivalencia">
+      <img src="https://img.shields.io/badge/Valores_límite-✔️-lightgrey" alt="Valores límite">
+      <img src="https://img.shields.io/badge/Pruebas_por_pares-✔️-lightgrey" alt="Pruebas por pares">
+    </div>
+  </div>
+  <!-- Categoría: Automatización -->
+  <div class="categoria">
+    <h3>🤖 Automatización y Lenguajes</h3>
+    <div class="badges">
+      <img src="https://img.shields.io/badge/Python-3.8%2B-blue" alt="Python">
+      <img src="https://img.shields.io/badge/Pytest-Framework-green" alt="Pytest">
+      <img src="https://img.shields.io/badge/Requests-Library-orange" alt="Requests">
+      <img src="https://img.shields.io/badge/Selenium-WebDriver-yellowgreen" alt="Selenium WebDriver">
+      <img src="https://img.shields.io/badge/Page_Object_Model-POM-lightblue" alt="POM">
+    </div>
+  </div>
+  <!-- Categoría: Bases de datos -->
+  <div class="categoria">
+    <h3>🗄️ Bases de Datos</h3>
+    <div class="badges">
+      <img src="https://img.shields.io/badge/SQL-Relational-blue" alt="SQL">
+      <img src="https://img.shields.io/badge/PostgreSQL-Database-blueviolet" alt="PostgreSQL">
+    </div>
+  </div>
+  <!-- Categoría: Herramientas -->
+  <div class="categoria">
+    <h3>🛠️ Herramientas</h3>
+    <div class="badges">
+      <img src="https://img.shields.io/badge/Git-Version_Control-orange" alt="Git">
+      <img src="https://img.shields.io/badge/GitHub-Code_hosting-black" alt="GitHub">
+      <img src="https://img.shields.io/badge/Jira-Project_Management-blue" alt="Jira">
+      <img src="https://img.shields.io/badge/Postman-API_Testing-orange" alt="Postman">
+      <img src="https://img.shields.io/badge/DevTools-Chrome-yellow" alt="DevTools">
+    </div>
+  </div>
+  <!-- Categoría: Sistemas Operativos -->
+  <div class="categoria">
+    <h3>💻 Sistemas Operativos</h3>
+    <div class="badges">
+      <img src="https://img.shields.io/badge/Linux-OS-black" alt="Linux">
+      <img src="https://img.shields.io/badge/Mac-OS-lightgrey" alt="Mac">
+      <img src="https://img.shields.io/badge/Windows-OS-blue" alt="Windows">
+    </div>
+  </div>
+  <!-- Categoría: Otros -->
+  <div class="categoria">
+    <h3>📚 Otros</h3>
+    <div class="badges">
+      <img src="https://img.shields.io/badge/Android_Studio-IDE-green" alt="Android Studio">
+      <img src="https://img.shields.io/badge/LaTeX-Typesetting-blue" alt="LaTeX">
+      <img src="https://img.shields.io/badge/Overleaf-Editor-brightgreen" alt="Overleaf">
+    </div>
   </div>
   </section>
 
