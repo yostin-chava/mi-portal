@@ -70,6 +70,7 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       flex: 1 1 250px;
       transition: transform 0.3s ease;
+      text-align: center;
     }
     .card:hover {
       transform: translateY(-5px);
@@ -81,7 +82,9 @@
     
     /* Boton de los proyectos */
     .card .btn {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       margin-top: 15px;
       padding: 8px 15px;
       background: #4a90e2;
@@ -92,6 +95,9 @@
     }
     .card .btn:hover {
       background: #357ABD;
+    }
+    .card .btn i {
+      font-size: 18px;
     }
 
     /* Sección de contacto */
@@ -179,23 +185,36 @@
   <!-- Proyectos -->
   <!-- --------- -->
   <section id="proyectos">
-    <h2>Proyectos</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Proyecto 1</h3>
-        <p>Descripción breve de mi proyecto 1.</p>
-        <a class="btn" href="https://github.com/TUUSUARIO/proyecto1" target="_blank">Ver Repo</a>
-      </div>
-      <div class="card">
-        <h3>Proyecto 2</h3>
-        <p>Descripción breve de mi proyecto 2.</p>
-      </div>
-      <div class="card">
-        <h3>Proyecto 3</h3>
-        <p>Descripción breve de mi proyecto 3.</p>
-      </div>
+  <h2>Proyectos</h2>
+  <div class="cards">
+    <!-- Proyecto 1 -->
+    <div class="card">
+      <h3>Proyecto 1</h3>
+      <p>Descripción breve de mi proyecto 1.</p>
+      <a class="btn" href="https://github.com/TUUSUARIO/proyecto1" target="_blank">
+        <i class="fab fa-github"></i> Ver Repo
+      </a>
     </div>
-  </section>
+
+    <!-- Proyecto 2 -->
+    <div class="card">
+      <h3>Proyecto 2</h3>
+      <p>Descripción breve de mi proyecto 2.</p>
+      <a class="btn" href="https://github.com/TUUSUARIO/proyecto2" target="_blank">
+        <i class="fab fa-github"></i> Ver Repo
+      </a>
+    </div>
+
+    <!-- Proyecto 3 -->
+    <div class="card">
+      <h3>Proyecto 3</h3>
+      <p>Descripción breve de mi proyecto 3.</p>
+      <a class="btn" href="https://github.com/TUUSUARIO/proyecto3" target="_blank">
+        <i class="fab fa-github"></i> Ver Repo
+      </a>
+    </div>
+  </div>
+</section>
   <!-- -------- -->
   <!-- Contacto -->
   <!-- -------- -->
