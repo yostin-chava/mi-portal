@@ -81,27 +81,51 @@
 
     /* Sección de contacto */
     #contacto {
-    padding: 60px 20px;
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
     }
     #contacto h2 {
-    color: #357ABD;
-    margin-bottom: 20px;
+      color: #357ABD;
+      margin-bottom: 20px;
     }
     #contacto a {
-    color: #4a90e2;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s;
+      color: #4a90e2;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s;
     }
     #contacto a:hover {
-    color: #ffdd57;
-    text-decoration: underline;
+      color: #ffdd57;
+      text-decoration: underline;
+    }
+    contacto .contact-items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    #contacto .contact-items a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #4a90e2;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+    #contacto .contact-items a:hover {
+      color: #ffdd57;
+    }
+    #contacto i {
+      font-size: 24px;
     }
 
+    /* Sección de footer */
     footer {
     background: linear-gradient(90deg, #4a90e2, #357ABD);
     color: #fff;
@@ -151,14 +175,23 @@
     </div>
   </section>
 
+  <!-- Contacto -->
   <section id="contacto">
   <h2>Contacto</h2>
-  <p>Escríbeme a: <a href="yostinch@gmail.com">yostinch@gmail.com</a></p>
-  <p>
-    <a href="https://www.linkedin.com/in/TU-NOMBRE" target="_blank">LinkedIn</a> | 
-    <a href="https://github.com/TUUSUARIO" target="_blank">GitHub</a> | 
-    <a href="docs/CV.pdf" download>Descargar CV</a>
-  </p>
+  <div class="contact-items">
+    <a href="mailto:tuemail@correo.com">
+      <i class="fas fa-envelope"></i> Email
+    </a>
+    <a href="https://www.linkedin.com/in/TU-NOMBRE" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="https://github.com/TUUSUARIO" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="docs/CV.pdf" download>
+      <i class="fas fa-file-download"></i> Descargar CV
+    </a>
+  </div>
 </section>
 
   <footer>
