@@ -63,41 +63,69 @@
       text-align: center;
       font-size: 18px;
     }
+
     /* ---------------------- */
-    /* Seccion de Habilidades */
+    /* Sección de Habilidades */
     /* ---------------------- */
     #habilidades {
-      padding: 50px 20px;
-      background-color: #f5f5f5;
+      padding: 60px 20px;
+      background: linear-gradient(120deg, #f5f5f5, #e0f0ff);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-align: center;
     }
-    
+    #habilidades h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #357ABD;
+    }
+    /* Categorías */
     .categoria {
-      margin-bottom: 50px;
+      margin-bottom: 60px;
     }
-    
     .categoria h3 {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       color: #4a90e2;
+      font-size: 24px;
     }
-    
+    /* Badges */
     .badges {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
+      gap: 12px;
     }
-    
     .badges img {
-      height: 28px;
-      border-radius: 5px;
-      transition: transform 0.2s, filter 0.2s;
+      height: 32px;
+      border-radius: 6px;
+      transition: transform 0.2s, filter 0.2s, box-shadow 0.2s;
     }
-    
     .badges img:hover {
-      transform: scale(1.1);
+      transform: scale(1.15);
       filter: brightness(1.2);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      #habilidades h2 {
+        font-size: 28px;
+      }
+      .categoria h3 {
+        font-size: 20px;
+      }
+      .badges img {
+        height: 28px;
+      }
+    }
+    @media (max-width: 480px) {
+      #habilidades h2 {
+        font-size: 24px;
+      }
+      .categoria h3 {
+        font-size: 18px;
+      }
+      .badges img {
+        height: 24px;
+      }
     }
     
     /* -------------------- */
@@ -233,19 +261,19 @@
   </section>
 
   <!-- ----------- -->
-  <!-- Habilidades -->
-  <!-- ----------- -->
-  <section id="habilidades">
+<!-- Habilidades -->
+<!-- ----------- -->
+<section id="habilidades">
   <h2>Habilidades</h2>
   <!-- Categoría: Pruebas -->
   <div class="categoria">
     <h3>🧪 Pruebas</h3>
     <div class="badges">
       <img src="https://img.shields.io/badge/Pruebas_funcionales-✔️-brightgreen" alt="Pruebas funcionales">
-      <img src="https://img.shields.io/badge/Pruebas_regresión-✔️-brightgreen" alt="Pruebas de regresión">
-      <img src="https://img.shields.io/badge/Pruebas_exploratorias-✔️-brightgreen" alt="Pruebas exploratorias">
-      <img src="https://img.shields.io/badge/Caja_Negra-✔️-lightgrey" alt="Pruebas de caja negra">
-      <img src="https://img.shields.io/badge/Caja_Blanca-✔️-lightgrey" alt="Pruebas de caja blanca">
+      <img src="https://img.shields.io/badge/Pruebas_regresión-✔️-green" alt="Pruebas de regresión">
+      <img src="https://img.shields.io/badge/Pruebas_exploratorias-✔️-lightgreen" alt="Pruebas exploratorias">
+      <img src="https://img.shields.io/badge/Caja_Negra-✔️-grey" alt="Pruebas de caja negra">
+      <img src="https://img.shields.io/badge/Caja_Blanca-✔️-grey" alt="Pruebas de caja blanca">
       <img src="https://img.shields.io/badge/Listas_de_comprobación-✔️-lightgrey" alt="Listas de comprobación">
       <img src="https://img.shields.io/badge/Casos_de_prueba-✔️-blue" alt="Casos de prueba">
       <img src="https://img.shields.io/badge/Informe_de_errores-✔️-red" alt="Informe de errores">
@@ -254,7 +282,7 @@
       <img src="https://img.shields.io/badge/Pruebas_por_pares-✔️-lightgrey" alt="Pruebas por pares">
     </div>
   </div>
-  <!-- Categoría: Automatización -->
+  <!-- Categoría: Automatización y Lenguajes -->
   <div class="categoria">
     <h3>🤖 Automatización y Lenguajes</h3>
     <div class="badges">
